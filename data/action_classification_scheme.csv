@@ -1,0 +1,22 @@
+Action,action_name,category
+1.1,Site/area protection,Land/water protection
+1.2,Resource & habitat protection,Land/water protection
+2.1,Site/area management,Land/water management
+2.2,Invasive/problematic species control,Land/water management
+2.3,Habitat & natural process restoration,Land/water management
+3.1,Species management,Species management
+3.2,Species recovery,Species management
+3.3,Species re-introduction,Species management
+3.4,Ex-situ conservation,Species management
+4.1,Formal education,Education & awareness
+4.2,Training,Education & awareness
+4.3,Awareness & communications,Education & awareness
+5.1,Legislation,Law & policy
+5.2,Policies and regulations,Law & policy
+5.3,Private sector standards & codes,Law & policy
+5.4,Compliance and enforcemen,Law & policy
+6.1,Linked enterprises & livelihood alternatives,"Livelihood, economic & other incentives"
+6.2,Substitution,"Livelihood, economic & other incentives"
+6.3,Market forces,"Livelihood, economic & other incentives"
+6.4,Conservation payments,"Livelihood, economic & other incentives"
+6.5,Non-monetary values,"Livelihood, economic & other incentives"
