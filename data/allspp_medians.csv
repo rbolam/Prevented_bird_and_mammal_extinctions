@@ -1,0 +1,192 @@
+Common.name,Scientific.name,class,est,median1993,median2010,agreement1993,agreement2010,order1993,order2010
+Bawean Deer,Axis kuhlii,MAMMALIA,Highest,58,40,Medium,Medium,4,2
+Bawean Deer,Axis kuhlii,MAMMALIA,Best,30,17.5,Medium,Medium,4,2
+Bawean Deer,Axis kuhlii,MAMMALIA,Lowest,17.5,5,Medium,High,4,2
+Black-footed Ferret,Mustela nigripes,MAMMALIA,Highest,100,72.5,High,Medium,20,14
+Black-footed Ferret,Mustela nigripes,MAMMALIA,Best,95,60,High,Medium,20,14
+Black-footed Ferret,Mustela nigripes,MAMMALIA,Lowest,90,40,High,Medium,20,14
+Black Lion Tamarin,Leontopithecus chrysopygus,MAMMALIA,Highest,40,NA,Medium,High,2,NA
+Black Lion Tamarin,Leontopithecus chrysopygus,MAMMALIA,Best,20,NA,High,High,2,NA
+Black Lion Tamarin,Leontopithecus chrysopygus,MAMMALIA,Lowest,10,NA,Medium,High,2,NA
+Bridled Nailtail Wallaby,Onychogalea fraenata,MAMMALIA,Highest,55,NA,Medium,High,6,NA
+Bridled Nailtail Wallaby,Onychogalea fraenata,MAMMALIA,Best,40,NA,Medium,High,6,NA
+Bridled Nailtail Wallaby,Onychogalea fraenata,MAMMALIA,Lowest,20,NA,Medium,High,6,NA
+Cao-vit Gibbon,Nomascus nasutus,MAMMALIA,Highest,80,60,Medium,Medium,10,7
+Cao-vit Gibbon,Nomascus nasutus,MAMMALIA,Best,60,37.5,High,Medium,10,7
+Cao-vit Gibbon,Nomascus nasutus,MAMMALIA,Lowest,40,20,Medium,Medium,10,7
+Cat Ba Langur,Trachypithecus poliocephalus,MAMMALIA,Highest,90,75,Medium,Medium,13,13
+Cat Ba Langur,Trachypithecus poliocephalus,MAMMALIA,Best,75,55,Medium,High,13,13
+Cat Ba Langur,Trachypithecus poliocephalus,MAMMALIA,Lowest,60,40,High,Medium,13,13
+Delacour's Langur,Trachypithecus delacouri,MAMMALIA,Highest,70,47.5,High,Medium,8,4
+Delacour's Langur,Trachypithecus delacouri,MAMMALIA,Best,50,30,Medium,High,8,4
+Delacour's Langur,Trachypithecus delacouri,MAMMALIA,Lowest,27.5,10,Medium,Medium,8,4
+Gilbert's Potoroo,Potorous gilbertii,MAMMALIA,Highest,100,65,High,Medium,21,8
+Gilbert's Potoroo,Potorous gilbertii,MAMMALIA,Best,100,40,High,Medium,21,8
+Gilbert's Potoroo,Potorous gilbertii,MAMMALIA,Lowest,95,25,Medium,Medium,21,8
+Golden Lion Tamarin,Leontopithecus rosalia,MAMMALIA,Highest,70,NA,Medium,High,7,NA
+Golden Lion Tamarin,Leontopithecus rosalia,MAMMALIA,Best,47.5,NA,Medium,High,7,NA
+Golden Lion Tamarin,Leontopithecus rosalia,MAMMALIA,Lowest,30,NA,High,High,7,NA
+Hainan Gibbon,Nomascus hainanus,MAMMALIA,Highest,95,70,Medium,Medium,14,12
+Hainan Gibbon,Nomascus hainanus,MAMMALIA,Best,80,50,Medium,Medium,14,12
+Hainan Gibbon,Nomascus hainanus,MAMMALIA,Lowest,50,30,Medium,Medium,14,12
+Iberian Lynx,Lynx pardinus,MAMMALIA,Highest,90,50,High,High,15,5
+Iberian Lynx,Lynx pardinus,MAMMALIA,Best,80,32.5,High,High,15,5
+Iberian Lynx,Lynx pardinus,MAMMALIA,Lowest,50,20,High,High,15,5
+Javan Rhinoceros,Rhinoceros sondaicus,MAMMALIA,Highest,100,87.5,High,Medium,18,16
+Javan Rhinoceros,Rhinoceros sondaicus,MAMMALIA,Best,90,75,High,Medium,18,16
+Javan Rhinoceros,Rhinoceros sondaicus,MAMMALIA,Lowest,80,50,Medium,Medium,18,16
+Northern Hairy-nosed Wombat,Lasiorhinus krefftii,MAMMALIA,Highest,95,55,Medium,High,16,6
+Northern Hairy-nosed Wombat,Lasiorhinus krefftii,MAMMALIA,Best,80,32.5,Medium,High,16,6
+Northern Hairy-nosed Wombat,Lasiorhinus krefftii,MAMMALIA,Lowest,50,20,Medium,High,16,6
+Northern Idaho Ground Squirrel,Urocitellus brunneus,MAMMALIA,Highest,70,NA,High,High,9,NA
+Northern Idaho Ground Squirrel,Urocitellus brunneus,MAMMALIA,Best,55,NA,High,High,9,NA
+Northern Idaho Ground Squirrel,Urocitellus brunneus,MAMMALIA,Lowest,30,NA,Medium,High,9,NA
+Père David's Deer,Elaphurus davidianus,MAMMALIA,Best,100,100,High,High,23,18
+Przewalski's Horse,Equus ferus,MAMMALIA,Highest,100,65,High,Medium,22,10
+Przewalski's Horse,Equus ferus,MAMMALIA,Best,100,42.5,High,Medium,22,10
+Przewalski's Horse,Equus ferus,MAMMALIA,Lowest,100,25,High,Medium,22,10
+Pygmy Hog,Porcula salvania,MAMMALIA,Highest,80,60,Medium,High,11,9
+Pygmy Hog,Porcula salvania,MAMMALIA,Best,70,40,High,Medium,11,9
+Pygmy Hog,Porcula salvania,MAMMALIA,Lowest,50,20,Medium,Medium,11,9
+Red Wolf,Canis rufus,MAMMALIA,Highest,96.5,80,Medium,Low,17,15
+Red Wolf,Canis rufus,MAMMALIA,Best,85,60,Medium,Medium,17,15
+Red Wolf,Canis rufus,MAMMALIA,Lowest,65,40,Medium,Medium,17,15
+Riverine Rabbit,Bunolagus monticularis,MAMMALIA,Highest,32.5,NA,Medium,High,1,NA
+Riverine Rabbit,Bunolagus monticularis,MAMMALIA,Best,17.5,NA,High,High,1,NA
+Riverine Rabbit,Bunolagus monticularis,MAMMALIA,Lowest,5,NA,High,High,1,NA
+Scimitar-horned Oryx,Oryx dammah,MAMMALIA,Best,100,100,High,High,24,19
+Sumatran Rhinoceros,Dicerorhinus sumatrensis,MAMMALIA,Highest,60,40,Low,Medium,5,3
+Sumatran Rhinoceros,Dicerorhinus sumatrensis,MAMMALIA,Best,30,22.5,Medium,Medium,5,3
+Sumatran Rhinoceros,Dicerorhinus sumatrensis,MAMMALIA,Lowest,20,12.5,Medium,Medium,5,3
+Tenkile,Dendrolagus scottae,MAMMALIA,Highest,40,30,Medium,Medium,3,1
+Tenkile,Dendrolagus scottae,MAMMALIA,Best,25,10,Medium,Medium,3,1
+Tenkile,Dendrolagus scottae,MAMMALIA,Lowest,10,1,Medium,High,3,1
+Vancouver Island Marmot,Marmota vancouverensis,MAMMALIA,Highest,90,60,Medium,Medium,12,11
+Vancouver Island Marmot,Marmota vancouverensis,MAMMALIA,Best,72.5,45,Medium,Medium,12,11
+Vancouver Island Marmot,Marmota vancouverensis,MAMMALIA,Lowest,50,20,Medium,Medium,12,11
+Vaquita,Phocoena sinus,MAMMALIA,Highest,100,100,High,High,19,17
+Vaquita,Phocoena sinus,MAMMALIA,Best,90,77.5,High,Medium,19,17
+Vaquita,Phocoena sinus,MAMMALIA,Lowest,65,50,Medium,Low,19,17
+Alagoas Antwren,Myrmotherula snowi,AVES,Highest,99,95,High,Medium,33,20
+Alagoas Antwren,Myrmotherula snowi,AVES,Best,91,85,High,Medium,33,20
+Alagoas Antwren,Myrmotherula snowi,AVES,Lowest,80,70,Medium,High,33,20
+Alagoas Curassow,Mitu mitu,AVES,Best,100,100,High,High,40,24
+Asian Crested Ibis,Nipponia nippon,AVES,Highest,98.5,NA,High,High,25,NA
+Asian Crested Ibis,Nipponia nippon,AVES,Best,90,NA,High,High,25,NA
+Asian Crested Ibis,Nipponia nippon,AVES,Lowest,80,NA,High,High,25,NA
+Bali Myna,Leucopsar rothschildi,AVES,Highest,100,98,High,High,35,21
+Bali Myna,Leucopsar rothschildi,AVES,Best,95,90,High,Medium,35,21
+Bali Myna,Leucopsar rothschildi,AVES,Lowest,85,80,Medium,Medium,35,21
+Black Stilt,Himantopus novaezelandiae,AVES,Highest,99,85,High,Medium,26,16
+Black Stilt,Himantopus novaezelandiae,AVES,Best,90,70,Medium,Medium,26,16
+Black Stilt,Himantopus novaezelandiae,AVES,Lowest,72.5,60,Medium,Medium,26,16
+California Condor,Gymnogyps californianus,AVES,Highest,100,70,High,High,39,11
+California Condor,Gymnogyps californianus,AVES,Best,98.5,50,High,Medium,39,11
+California Condor,Gymnogyps californianus,AVES,Lowest,92.5,32.5,High,Medium,39,11
+Campbell Teal,Anas nesiotis,AVES,Highest,60,NA,Medium,High,3,NA
+Campbell Teal,Anas nesiotis,AVES,Best,30,NA,Medium,High,3,NA
+Campbell Teal,Anas nesiotis,AVES,Lowest,12.5,NA,Medium,High,3,NA
+Chatham parakeet,Cyanoramphus forbesi,AVES,Highest,55,NA,Medium,High,1,NA
+Chatham parakeet,Cyanoramphus forbesi,AVES,Best,27.5,NA,Medium,High,1,NA
+Chatham parakeet,Cyanoramphus forbesi,AVES,Lowest,10,NA,Medium,High,1,NA
+Chinese Crested Tern,Thalasseus bernsteini,AVES,Highest,52.5,42.5,Medium,Medium,7,2
+Chinese Crested Tern,Thalasseus bernsteini,AVES,Best,40,25,High,Medium,7,2
+Chinese Crested Tern,Thalasseus bernsteini,AVES,Lowest,20,10,Medium,Medium,7,2
+Echo Parakeet,Psittacula eques,AVES,Highest,99.5,NA,High,High,34,NA
+Echo Parakeet,Psittacula eques,AVES,Best,94.5,NA,High,High,34,NA
+Echo Parakeet,Psittacula eques,AVES,Lowest,82.5,NA,Medium,High,34,NA
+Fatu Hiva Monarch,Pomarea whitneyi,AVES,Highest,98.5,96.5,High,Medium,27,22
+Fatu Hiva Monarch,Pomarea whitneyi,AVES,Best,90,90,Medium,Medium,27,22
+Fatu Hiva Monarch,Pomarea whitneyi,AVES,Lowest,75,75,Medium,Medium,27,22
+Great Indian Bustard,Ardeotis nigriceps,AVES,Highest,70,60,High,High,10,9
+Great Indian Bustard,Ardeotis nigriceps,AVES,Best,47.5,40,Medium,High,10,9
+Great Indian Bustard,Ardeotis nigriceps,AVES,Lowest,25,20,High,Medium,10,9
+Guadalupe Junco,Junco insularis,AVES,Highest,96.5,NA,Medium,High,28,NA
+Guadalupe Junco,Junco insularis,AVES,Best,90,NA,Medium,High,28,NA
+Guadalupe Junco,Junco insularis,AVES,Lowest,75,NA,Medium,High,28,NA
+Guam Kingfisher,Todiramphus cinnamominus,AVES,Best,100,100,High,High,41,25
+Guam Rail,Hypotaenidia owstoni,AVES,Best,100,100,High,High,42,26
+Hawaiian Crow,Corvus hawaiiensis,AVES,Best,100,100,High,High,43,27
+Indigo-winged Parrot,Hapalopsittaca fuertesi,AVES,Highest,67.5,47.5,Medium,Medium,13,3
+Indigo-winged Parrot,Hapalopsittaca fuertesi,AVES,Best,50,30,Medium,Medium,13,3
+Indigo-winged Parrot,Hapalopsittaca fuertesi,AVES,Lowest,20,12.5,Medium,Medium,13,3
+Lear's Macaw,Anodorhynchus leari,AVES,Highest,95,NA,High,High,23,NA
+Lear's Macaw,Anodorhynchus leari,AVES,Best,85,NA,High,High,23,NA
+Lear's Macaw,Anodorhynchus leari,AVES,Lowest,70,NA,High,High,23,NA
+Madagascar Pochard,Aythya innotata,AVES,Highest,52.5,50,Medium,Medium,4,4
+Madagascar Pochard,Aythya innotata,AVES,Best,32.5,30,Medium,Medium,4,4
+Madagascar Pochard,Aythya innotata,AVES,Lowest,20,17.5,Medium,Medium,4,4
+Magenta Petrel,Pterodroma magentae,AVES,Highest,80,50,Medium,Medium,16,7
+Magenta Petrel,Pterodroma magentae,AVES,Best,62.5,37.5,Medium,Medium,16,7
+Magenta Petrel,Pterodroma magentae,AVES,Lowest,40,20,Medium,Medium,16,7
+Malherbe's Parakeet,Cyanoramphus malherbi,AVES,Highest,90,80,Medium,Medium,21,14
+Malherbe's Parakeet,Cyanoramphus malherbi,AVES,Best,80,65,Medium,Medium,21,14
+Malherbe's Parakeet,Cyanoramphus malherbi,AVES,Lowest,50,40,Medium,Medium,21,14
+Mangrove Finch,Geospiza heliobates,AVES,Highest,90,70,Medium,Medium,18,13
+Mangrove Finch,Geospiza heliobates,AVES,Best,70,60,Medium,Medium,18,13
+Mangrove Finch,Geospiza heliobates,AVES,Lowest,60,40,High,Medium,18,13
+Mariana Crow,Corvus kubaryi,AVES,Highest,95,85,Medium,Medium,20,17
+Mariana Crow,Corvus kubaryi,AVES,Best,80,70,Medium,Medium,20,17
+Mariana Crow,Corvus kubaryi,AVES,Lowest,60,50,Medium,High,20,17
+Niceforo's Wren,Thryophilus nicefori,AVES,Highest,50,NA,Medium,High,2,NA
+Niceforo's Wren,Thryophilus nicefori,AVES,Best,27.5,NA,Medium,High,2,NA
+Niceforo's Wren,Thryophilus nicefori,AVES,Lowest,12.5,NA,Medium,High,2,NA
+North Island Kokako,Callaeas wilsoni,AVES,Highest,62.5,NA,Medium,High,8,NA
+North Island Kokako,Callaeas wilsoni,AVES,Best,40,NA,Medium,High,8,NA
+North Island Kokako,Callaeas wilsoni,AVES,Lowest,20,NA,Medium,High,8,NA
+Northern Bald Ibis,Geronticus eremita,AVES,Highest,80,50,Medium,Medium,17,5
+Northern Bald Ibis,Geronticus eremita,AVES,Best,65.5,30,High,Medium,17,5
+Northern Bald Ibis,Geronticus eremita,AVES,Lowest,40,17.5,Medium,Medium,17,5
+Okarito Kiwi,Apteryx rowi,AVES,Highest,60,NA,Medium,High,9,NA
+Okarito Kiwi,Apteryx rowi,AVES,Best,40,NA,High,High,9,NA
+Okarito Kiwi,Apteryx rowi,AVES,Lowest,20,NA,Medium,High,9,NA
+Orange-bellied Parrot,Neophema chrysogaster,AVES,Highest,99,98.5,High,High,36,23
+Orange-bellied Parrot,Neophema chrysogaster,AVES,Best,95,90,High,High,36,23
+Orange-bellied Parrot,Neophema chrysogaster,AVES,Lowest,85,80,Medium,Medium,36,23
+Pale-headed Brush-finch,Atlapetes pallidiceps,AVES,Highest,95,NA,High,High,24,NA
+Pale-headed Brush-finch,Atlapetes pallidiceps,AVES,Best,85,NA,Medium,High,24,NA
+Pale-headed Brush-finch,Atlapetes pallidiceps,AVES,Lowest,75,NA,Medium,High,24,NA
+Pink Pigeon,Nesoenas mayeri,AVES,Highest,100,NA,High,High,37,NA
+Pink Pigeon,Nesoenas mayeri,AVES,Best,95,NA,High,High,37,NA
+Pink Pigeon,Nesoenas mayeri,AVES,Lowest,90,NA,High,High,37,NA
+Puerto Rican Amazon,Amazona vittata,AVES,Highest,100,85,High,Medium,38,18
+Puerto Rican Amazon,Amazona vittata,AVES,Best,97,70,High,Medium,38,18
+Puerto Rican Amazon,Amazona vittata,AVES,Lowest,90,50,High,Medium,38,18
+Rarotonga Monarch,Pomarea dimidiata,AVES,Highest,95,NA,High,High,29,NA
+Rarotonga Monarch,Pomarea dimidiata,AVES,Best,90,NA,High,High,29,NA
+Rarotonga Monarch,Pomarea dimidiata,AVES,Lowest,75,NA,Medium,High,29,NA
+Red-billed Curassow,Crax blumenbachii,AVES,Highest,80,NA,Medium,High,15,NA
+Red-billed Curassow,Crax blumenbachii,AVES,Best,60,NA,High,High,15,NA
+Red-billed Curassow,Crax blumenbachii,AVES,Lowest,35,NA,High,High,15,NA
+Reunion Cuckooshrike,Lalage newtoni,AVES,Highest,90,75,Medium,Medium,19,12
+Reunion Cuckooshrike,Lalage newtoni,AVES,Best,76.5,57.5,Medium,Medium,19,12
+Reunion Cuckooshrike,Lalage newtoni,AVES,Lowest,60,30,Medium,Medium,19,12
+Rodrigues Warbler,Acrocephalus rodericanus,AVES,Highest,50,NA,Medium,High,5,NA
+Rodrigues Warbler,Acrocephalus rodericanus,AVES,Best,35,NA,Medium,High,5,NA
+Rodrigues Warbler,Acrocephalus rodericanus,AVES,Lowest,17.5,NA,Medium,High,5,NA
+Seychelles Magpie-robin,Copsychus sechellarum,AVES,Highest,99,53,High,Medium,30,8
+Seychelles Magpie-robin,Copsychus sechellarum,AVES,Best,90,39,High,Medium,30,8
+Seychelles Magpie-robin,Copsychus sechellarum,AVES,Lowest,77.5,15,Medium,Medium,30,8
+Socorro Dove,Zenaida graysoni,AVES,Best,100,100,High,High,44,28
+Southern Red-breasted Plover,Charadrius obscurus,AVES,Highest,96.5,80,High,Medium,31,15
+Southern Red-breasted Plover,Charadrius obscurus,AVES,Best,90,65,High,Medium,31,15
+Southern Red-breasted Plover,Charadrius obscurus,AVES,Lowest,75,50,Medium,Medium,31,15
+Spix's Macaw,Cyanopsitta spixii,AVES,Best,100,100,High,High,45,29
+Spoon-billed Sandpiper,Calidris pygmaea,AVES,Highest,75,65,Medium,Medium,11,10
+Spoon-billed Sandpiper,Calidris pygmaea,AVES,Best,47.5,47.5,Medium,Medium,11,10
+Spoon-billed Sandpiper,Calidris pygmaea,AVES,Lowest,22.5,20,Medium,Medium,11,10
+Tahiti Monarch,Pomarea nigra,AVES,Highest,97.5,90,High,Medium,32,19
+Tahiti Monarch,Pomarea nigra,AVES,Best,90,80,Medium,Medium,32,19
+Tahiti Monarch,Pomarea nigra,AVES,Lowest,77.5,60,Medium,Medium,32,19
+Taita Thrush,Turdus helleri,AVES,Highest,60,NA,Medium,High,6,NA
+Taita Thrush,Turdus helleri,AVES,Best,35,NA,High,High,6,NA
+Taita Thrush,Turdus helleri,AVES,Lowest,20,NA,Medium,High,6,NA
+Townsend's Shearwater,Puffinus auricularis,AVES,Highest,60,45,Medium,Medium,12,1
+Townsend's Shearwater,Puffinus auricularis,AVES,Best,47.5,20,Medium,Medium,12,1
+Townsend's Shearwater,Puffinus auricularis,AVES,Lowest,20,10,Medium,Medium,12,1
+Yellow-eared Parrot,Ognorhynchus icterotis,AVES,Highest,90,NA,Medium,High,22,NA
+Yellow-eared Parrot,Ognorhynchus icterotis,AVES,Best,80,NA,Medium,High,22,NA
+Yellow-eared Parrot,Ognorhynchus icterotis,AVES,Lowest,62.5,NA,Low,High,22,NA
+Zino's Petrel,Pterodroma madeira,AVES,Highest,75,50,Medium,High,14,6
+Zino's Petrel,Pterodroma madeira,AVES,Best,57.5,30,Medium,Medium,14,6
+Zino's Petrel,Pterodroma madeira,AVES,Lowest,25,12.5,Medium,Medium,14,6
