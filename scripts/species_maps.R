@@ -7,14 +7,23 @@ library(rworldmap)
 library(ggalt)
 library(gridExtra)
 
-
-
 cand <- read.csv("data/candidate_countries.csv")
+
+
+#### --------------------------------- Sort data ----------------------------------####
+
 ## Count number in each class by country for candidates, for 1993, and for 2010, & make list
+
+
+## For candidate species
+
 aggcand <- cand %>% 
   group_by(region, className) %>% 
   count() %>% 
   spread(className, n, fill = NA)
+
+
+## For 1993 species
 
 agg1993 <- cand %>% 
   filter(!is.na(t1993)) %>% 
@@ -23,6 +32,8 @@ agg1993 <- cand %>%
   spread(className, n, fill = NA)
 
 
+## For 2010 species
+
 agg2010 <- cand %>% 
   filter(!is.na(t2010)) %>% 
   group_by(region, className) %>% 
@@ -30,8 +41,14 @@ agg2010 <- cand %>%
   spread(className, n, fill = NA)
 
 
-  
+## Make list of 3 dataframes
+
 alldfs <- list(aggcand, agg1993, agg2010)
+
+
+
+#### --------------------------------- Make plots ----------------------------------####
+
 
 ## Empty plot lists:
 
@@ -39,17 +56,18 @@ plota <- list()
 plotb <- list()
 
 
-## Loop to make all figures:
+## Make figures:
+
 for (i in 1:3) {
   map.all <- map_data(map = "world")
   map.all <- full_join(map.all, alldfs[[i]], by = "region") 
   #map.all$MAMMALIA[map.all$region == "Guam"] <- 10 ## add in so colour scales match (but can't be seen in map)
   
-  ## Get island coordinates
+  ## Get island nation/ overseas territories coordinates
   islands <- map.all %>% 
     filter(!is.na(AVES) | !is.na(MAMMALIA)) %>% 
-    filter(region %in% c("Cooke Islands", "French Polynesia", "Guam", "Mauritius", "Northern Mariana Islands", "Puerto Rico",
-                         "Reunion", "Seychelles")) %>% 
+    filter(region %in% c("Cooke Islands", "French Polynesia", "Guam", "Mauritius", "Northern Mariana Islands", 
+                         "Puerto Rico", "Reunion", "Seychelles")) %>% 
     select(long, lat, region, AVES) %>% 
     group_by(region) %>% 
     mutate(mlong = mean(long)) %>% 
@@ -85,9 +103,11 @@ for (i in 1:3) {
 }
 
 
+#### --------------------------------- Save plots ----------------------------------####
 
 
-## Make candidate plot with adjusted scales
+## Make candidate plot with adjusted colour scales and save
+
 plotacand <- plota[[1]] +
   scale_fill_gradient2(low = "#edf8b1", mid = "#41b6c4", high = "#0c2c84", midpoint = 5.5, guide = "legend",
                        breaks = c(1, 3, 5, 7, 9)) + 
@@ -104,8 +124,8 @@ plot <- grid.arrange(plotacand, plotbcand, heights = c(1.07, 1))
 dev.off()
 
 
+## Make 1993 plot with adjusted colour scales and save
 
-## Make 1993 plot with adjusted scales
 plota1993 <- plota[[2]] +
   scale_fill_gradient2(low = "#edf8b1", mid = "#41b6c4", high = "#0c2c84", midpoint = 3.5, guide = "legend",
                        breaks = seq(1, 6, 1)) +
@@ -123,9 +143,8 @@ plot <- grid.arrange(plota1993, plotb1993, heights = c(1.07, 1))
 dev.off()
 
 
+## Make 2010 plot with adjusted colour scales and save
 
-
-## Make 2010 plot with adjusted scales
 plota2010 <- plota[[3]] +
   scale_fill_gradient2(low = "#edf8b1", mid = "#41b6c4", high = "#0c2c84", midpoint = 3, guide = "legend",
                        breaks = seq(1, 5, 1)) +
