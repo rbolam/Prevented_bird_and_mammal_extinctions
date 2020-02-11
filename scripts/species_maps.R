@@ -178,7 +178,7 @@ plotbcand <- plotb[[1]] +
   theme(legend.position = "none")
 
 mapcand <- grid.arrange(plotacand, plotbcand, heights = c(1.07, 1))
-ggsave("output/candidatemap.pdf", mapcand, width = 7.08661, height = 7, unit = "in", dpi = 300)
+ggsave("output/candidatemap.png", mapcand, width = 7.08661, height = 7, unit = "in", dpi = 1000)
 
 
 
@@ -215,6 +215,6 @@ plotb2010 <- plotb[[3]] +
   theme(legend.position = "none")
 
 map2010 <- grid.arrange(plota2010, plotb2010, heights = c(1.07, 1))
-ggsave("output/2010map.pdf", map2010, width = 7.08661, height = 7, unit = "in", dpi = 300)
+ggsave("output/2010map.png", map2010, width = 7.08661, height = 7, unit = "in", dpi = 1000)
 
 
