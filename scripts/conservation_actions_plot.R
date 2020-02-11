@@ -123,7 +123,7 @@ for (i in 1:2) {
 
 c1993 <- grid.arrange(plota1993, plotb1993, nrow = 1)
 
-ggsave("output/1993actions.pdf", c1993, width = 18, height = 10, unit = "cm", dpi = 600)
+ggsave("output/1993actions.pdf", c1993, width = 18, height = 10, unit = "cm", dpi = 1000)
 
 
 
