@@ -68,7 +68,7 @@ for (i in 1:3) {
 ## Adjust axes and save candidate plot
 
 plot[[1]] + coord_cartesian(ylim = c(1.1, 25))
-ggsave("output/candidatesrlcat.pdf", width = 8, height = 14, unit = "cm", dpi = 600)
+ggsave("output/candidatesrlcat.png", width = 8, height = 14, unit = "cm", dpi = 1000)
 
 
 ## Adjust axes and save 1993 plot
@@ -76,7 +76,7 @@ ggsave("output/candidatesrlcat.pdf", width = 8, height = 14, unit = "cm", dpi = 
 plot[[2]] +
   scale_y_continuous(breaks = seq(0, 15, 3)) +  
   coord_cartesian(ylim = c(0.7, 15))
-ggsave("output/1993rlcat.pdf", width = 8, height = 14, unit = "cm", dpi = 600)
+ggsave("output/1993rlcat.pdf", width = 8, height = 14, unit = "cm", dpi = 1000)
 
 
 ## Adjust axes and save 1993 plot
@@ -84,7 +84,7 @@ ggsave("output/1993rlcat.pdf", width = 8, height = 14, unit = "cm", dpi = 600)
 plot[[3]] +
   scale_y_continuous(breaks = seq(0, 15, 3)) +
   coord_cartesian(ylim = c(0.7, 15))
-ggsave("output/2010rlcat.pdf", width = 8, height = 14, unit = "cm", dpi = 600)
+ggsave("output/2010rlcat.png", width = 8, height = 14, unit = "cm", dpi = 1000)
 
 
 
