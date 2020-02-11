@@ -51,7 +51,7 @@ for (i in 1:3) {
   geom_bar(colour = "black", size = 0.01) +
   scale_fill_manual(values = c("#d7191c", "#ffffbf", "#2c7bb6", "grey50"), name = "Population trend") +
   facet_rep_wrap(~ class, ncol = 1,
-             labeller = labeller(className = c(AVES = "a) Birds", MAMMALIA = "b) Mammals")),
+             labeller = labeller(class = c(AVES = "a) Birds", MAMMALIA = "b) Mammals")),
              repeat.tick.labels = TRUE) +
   labs(x = "IUCN Red List category", y = "Number of species") +
   theme_classic() +
