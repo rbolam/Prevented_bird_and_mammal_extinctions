@@ -119,7 +119,7 @@ for (i in 1:3) {
 (plotbcand <- plotb[[1]] + coord_flip(ylim = c(1.4, 35)))
 
 ccand <- grid.arrange(plotacand, plotbcand, ncol = 1)
-ggsave("output/candidatethreats.pdf", ccand, width = 8, height = 14, unit = "cm", dpi = 600)
+ggsave("output/candidatethreats.png", ccand, width = 8, height = 14, unit = "cm", dpi = 1000)
 
 
 ## 1993 plot
@@ -128,7 +128,7 @@ ggsave("output/candidatethreats.pdf", ccand, width = 8, height = 14, unit = "cm"
 (plotb1993 <- plotb[[2]] + coord_flip(ylim = c(1.1, 25)))
 
 c1993 <- grid.arrange(plota1993, plotb1993, ncol = 1)
-ggsave("output/1993threats.pdf", c1993, width = 8, height = 12, unit = "cm", dpi = 600)
+ggsave("output/1993threats.pdf", c1993, width = 8, height = 12, unit = "cm", dpi = 1000)
 
 
 ## 2010 plot
@@ -137,5 +137,5 @@ ggsave("output/1993threats.pdf", c1993, width = 8, height = 12, unit = "cm", dpi
 (plotb2010 <- plotb[[3]] + coord_flip(ylim = c(0.7, 16)))
 
 c2010 <- grid.arrange(plota2010, plotb2010, ncol = 1)
-ggsave("output/2010threats.pdf", c2010, width = 8, height = 12, unit = "cm", dpi = 600)
+ggsave("output/2010threats.png", c2010, width = 8, height = 12, unit = "cm", dpi = 1000)
 
