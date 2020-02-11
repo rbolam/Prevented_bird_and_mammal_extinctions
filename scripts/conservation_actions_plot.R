@@ -13,11 +13,14 @@ actions <- read.csv("data/Conservation_actions.csv")
 classif <- read.csv("data/action_classification_scheme.csv")
 
 ## Load all candidate species
-allcand <- read.csv("data/all_info_candidates.csv")
-allcand <- select(allcand, Scientific.name, className)
+allcand <- read.csv("data/allspp_medians.csv")
+
+allcand <- allcand %>% 
+  filter(est == "Best") %>% 
+  select(Scientific.name, class, median1993, median2010)
 
 
-## --------------------------- Add taxonomic information -------------------------####
+## --------------------------- Add tax information & time -------------------------####
 
 act1993 <- actions %>% 
   left_join(classif, by = "Action") %>% 
@@ -54,8 +57,8 @@ act1993$act_lev2[act1993$act_lev2 == "Resource\n&\nhabitat\nprotection"] <- "Res
 
 #### ------------------------- Make plots for 1993 and 2010 ----------------------####
 
-
-act2010 <- filter(act1993, incl_2010 == "yes")
+act1993 <- filter(act1993, median1993 > 50)
+act2010 <- filter(act1993, median2010 > 50)
 
 alldfs <- list(act1993, act2010)
 
@@ -65,13 +68,13 @@ plotb <- list()
 
 for (i in 1:2) {
   alldfs[[i]] %>% 
-    filter(className == "AVES") %>% 
+    filter(class == "AVES") %>% 
     select(Scientific.name, act_lev2) %>% 
     unique() %>% 
     count(act_lev2) -> a
   
   alldfs[[i]] %>% 
-    filter(className == "AVES") %>% 
+    filter(class == "AVES") %>% 
     select(act_lev2, act_lev1) %>% 
     unique() %>% 
     left_join(a, by = "act_lev2") %>% 
@@ -87,13 +90,13 @@ for (i in 1:2) {
     plota[[i]]
   
   alldfs[[i]] %>% 
-    filter(className == "MAMMALIA") %>% 
+    filter(class == "MAMMALIA") %>% 
     select(Scientific.name, act_lev2) %>% 
     unique() %>% 
     count(act_lev2) -> b
   
   alldfs[[i]] %>% 
-    filter(className == "MAMMALIA") %>% 
+    filter(class == "MAMMALIA") %>% 
     select(act_lev2, act_lev1) %>% 
     unique() %>% 
     left_join(b, by = "act_lev2") %>% 
@@ -137,6 +140,6 @@ ggsave("output/1993actions.pdf", c1993, width = 18, height = 10, unit = "cm", dp
 
 c2010 <- grid.arrange(plota2010, plotb2010, nrow = 1)
 
-ggsave("output/2010actions.pdf", c2010, width = 18, height = 8, unit = "cm", dpi = 600)
+ggsave("output/2010actions.png", c2010, width = 18, height = 8, unit = "cm", dpi = 1000)
 
 
