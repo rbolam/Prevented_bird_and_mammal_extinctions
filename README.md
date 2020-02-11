@@ -8,4 +8,4 @@ All scripts to reproduce figures are contained here. There is a script for each 
 All figures are saved into this folder as PDFs.
 
 ## Data folder
-Here all data are deposited. allspp_medians.csv' contains the evaluators' median scores for all species for both the 1993 - 2020 time period and the 2010 - 2020 time period; the lowest, best and highest estimates; the agreement; and the order for plotting. 'Conservation.actions.csv' contains actions as listed on the species' Red List accounts and mapped to the IUCN action classification scheme. The folder 'RL_data_29_01_2020' contains relevant Red List information downloaded on 29 January 2020.
+Here all data are deposited. 'allspp_medians.csv' contains the evaluators' median scores for all species for both the 1993 - 2020 time period and the 2010 - 2020 time period; the lowest, best and highest estimates; the agreement; and the order for plotting. 'Conservation.actions.csv' contains actions as listed on the species' Red List accounts and mapped to the IUCN action classification scheme. The folder 'RL_data_29_01_2020' contains relevant Red List information downloaded on 29 January 2020.
