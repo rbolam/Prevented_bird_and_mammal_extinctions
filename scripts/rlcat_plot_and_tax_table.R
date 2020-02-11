@@ -6,17 +6,28 @@ library(tidyverse)
 library(lemon)
 
 
-allcand <- read.csv("data/all_info_candidates.csv")
+allcand <- read.csv("data/allspp_medians.csv")
+rlcat <- read.csv("data/RL_data_29_01_2020/simple_summary.csv")
 
 
-## --------------------------- Adjust factor levels -----------------------------####
+## -------------------------------- Sort data -----------------------------------####
+
+rlcat <- rlcat %>% 
+  select(scientificName, redlistCategory, populationTrend) %>% 
+  rename(Scientific.name = scientificName)
+
+allcand <- allcand %>% 
+  filter(est == "Best") %>% 
+  select(Scientific.name, class, median1993, median2010) %>% 
+  left_join(rlcat, by = "Scientific.name")
+
+
 
 ## Reorder Red List categories and population trends
 
 allcand$redlistCategory  = factor(allcand$redlistCategory, levels(allcand$redlistCategory)[c(3, 1, 2, 5, 4)])
-allcand$populationTrend  = factor(allcand$populationTrend, levels(allcand$populationTrend)[c(1, 3, 2, 4)])
-levels(allcand$populationTrend)[levels(allcand$populationTrend) == "Unknown"] <- "Unknown/NA"
-
+levels(allcand$populationTrend)[levels(allcand$populationTrend) %in% c("Unknown", "")] <- "Unknown/NA"
+allcand$populationTrend  = factor(allcand$populationTrend, levels(allcand$populationTrend)[c(2, 4, 3, 1)])
 
 ## Split names over 2 lines
 
@@ -26,8 +37,8 @@ levels(allcand$redlistCategory)[levels(allcand$redlistCategory) == "Extinct\nin\
 
 ## ---------------------------- Make list of 3 filtered dfs ---------------------####
 
-spp1993 <- filter(allcand, !is.na(t1993))
-spp2010 <- filter(allcand, !is.na(t2010))
+spp1993 <- filter(allcand, median1993 > 50)
+spp2010 <- filter(allcand, median2010 > 50)
 alldfs <- list(allcand, spp1993, spp2010)
 
 
@@ -39,7 +50,7 @@ for (i in 1:3) {
   ggplot(data = alldfs[[i]], aes(x = redlistCategory, fill = populationTrend)) +
   geom_bar(colour = "black", size = 0.01) +
   scale_fill_manual(values = c("#d7191c", "#ffffbf", "#2c7bb6", "grey50"), name = "Population trend") +
-  facet_rep_wrap(~ className, ncol = 1,
+  facet_rep_wrap(~ class, ncol = 1,
              labeller = labeller(className = c(AVES = "a) Birds", MAMMALIA = "b) Mammals")),
              repeat.tick.labels = TRUE) +
   labs(x = "IUCN Red List category", y = "Number of species") +
@@ -76,29 +87,4 @@ plot[[3]] +
 ggsave("output/2010rlcat.pdf", width = 8, height = 14, unit = "cm", dpi = 600)
 
 
-
-## ---------------------------- Taxonomic table ---------------------------------####
-
-df <- list()
-headings <- c("Candidates", "1993 species", "2010 species")
-
-
-## Count number of species in each family, for all 3 species groups
-
-for (i in 1:3) {
-  df[[i]] <- alldfs[[i]] %>% 
-    select(Scientific.name, className, familyName) %>% 
-    group_by(className, familyName) %>% 
-    count(name = paste(headings[i]))
-}
-
-
-## Merge all together
-
-taxonomy <- df[[1]] %>% 
-  left_join(df[[2]], by = c("className", "familyName")) %>% 
-  left_join(df[[3]], by = c("className", "familyName")) %>% 
-  replace_na(list(`1993 species` = 0, `2010 species` = 0))
-
-write_csv(taxonomy, "output/taxonomytable.csv")
 
