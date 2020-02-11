@@ -11,7 +11,7 @@ allcand <- read.csv("data/all_info_candidates.csv")
 
 ## --------------------------- Adjust factor levels -----------------------------####
 
-## Red List category and population trends
+## Reorder Red List categories and population trends
 
 allcand$redlistCategory  = factor(allcand$redlistCategory, levels(allcand$redlistCategory)[c(3, 1, 2, 5, 4)])
 allcand$populationTrend  = factor(allcand$populationTrend, levels(allcand$populationTrend)[c(1, 3, 2, 4)])
@@ -54,13 +54,13 @@ for (i in 1:3) {
 
 
 
-## Save candidate plot
+## Adjust axes and save candidate plot
 
 plot[[1]] + coord_cartesian(ylim = c(1.1, 25))
 ggsave("output/candidatesrlcat.pdf", width = 8, height = 14, unit = "cm", dpi = 600)
 
 
-## Save 1993 plot
+## Adjust axes and save 1993 plot
 
 plot[[2]] +
   scale_y_continuous(breaks = seq(0, 15, 3)) +  
@@ -68,7 +68,7 @@ plot[[2]] +
 ggsave("output/1993rlcat.pdf", width = 8, height = 14, unit = "cm", dpi = 600)
 
 
-## Save 1993 plot
+## Adjust axes and save 1993 plot
 
 plot[[3]] +
   scale_y_continuous(breaks = seq(0, 15, 3)) +
@@ -79,27 +79,26 @@ ggsave("output/2010rlcat.pdf", width = 8, height = 14, unit = "cm", dpi = 600)
 
 ## ---------------------------- Taxonomic table ---------------------------------####
 
-taxcand <- allcand %>% 
-  select(Scientific.name, className, familyName) %>% 
-  group_by(className, familyName) %>% 
-  count(name = "candidates")
+df <- list()
+headings <- c("Candidates", "1993 species", "2010 species")
 
 
-tax1993 <- spp1993 %>% 
-  select(Scientific.name, className, familyName) %>% 
-  group_by(className, familyName) %>% 
-  count(name = "1993 species")
+## Count number of species in each family, for all 3 species groups
+
+for (i in 1:3) {
+  df[[i]] <- alldfs[[i]] %>% 
+    select(Scientific.name, className, familyName) %>% 
+    group_by(className, familyName) %>% 
+    count(name = paste(headings[i]))
+}
 
 
-tax2010 <- spp2010 %>% 
-  select(Scientific.name, className, familyName) %>% 
-  group_by(className, familyName) %>% 
-  count(name = "2010 species")
+## Merge all together
 
-
-taxonomy <- taxcand %>% 
-  left_join(tax1993, by = c("className", "familyName")) %>% 
-  left_join(tax2010, by = c("className", "familyName"))
+taxonomy <- df[[1]] %>% 
+  left_join(df[[2]], by = c("className", "familyName")) %>% 
+  left_join(df[[3]], by = c("className", "familyName")) %>% 
+  replace_na(list(`1993 species` = 0, `2010 species` = 0))
 
 write_csv(taxonomy, "output/taxonomytable.csv")
 
