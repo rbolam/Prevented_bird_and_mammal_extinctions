@@ -1,5 +1,5 @@
 # Prevented bird and mammal extinctions
-This repository contains data, code and outputs for prevented bird and mammal extinctions project.
+This repository contains data, code and outputs for the prevented bird and mammal extinctions manuscript.
 
 ### Script folder
 All scripts to reproduce figures are contained here. There is a script for each figure. For medians, there are separate plots for birds and mammals. For maps, threats and conservation actions, scripts will create three different figures: for all candidate species, for species with a median above 50% for the 1993 - 2020 time period, and for species with a median above 50% for the 2010 - 2020 time period. 
