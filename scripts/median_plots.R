@@ -10,7 +10,7 @@ library(gridExtra)
 
 allsppmed <- read.csv("data/allspp_medians.csv")
 
-
+allsppmed <- mutate_if(allsppmed, is.character, as.factor)
 
 ## Reorder factor levels
 
@@ -141,7 +141,7 @@ rect <- data.frame(cbind(ymax, ymin, fill))
 ## Arrange and save
 
 e <- grid.arrange(b, d, nrow = 1)
-ggsave("output/median_scores_birds.pdf", e, dpi = 300, width = 15, height = 10, device = cairo_pdf)
+ggsave("output/median_scores_birds.pdf", e, dpi = 800, width = 15, height = 10, device = cairo_pdf)
 ggsave("output/median_scores_birds.png", e, dpi = 300, width = 381, height = 254, units = "mm")
 
 
@@ -249,7 +249,7 @@ ggsave("output/median_scores_birds.png", e, dpi = 300, width = 381, height = 254
 ## Arrange and save
 
 j <- grid.arrange(g, i, nrow = 1)
-ggsave("output/median_scores_mammals.pdf", j, dpi = 300, width = 13.5, height = 8, device = cairo_pdf)
+ggsave("output/median_scores_mammals.pdf", j, dpi = 800, width = 13.5, height = 8, device = cairo_pdf)
 ggsave("output/median_scores_mammals.png", j, dpi = 300, width = 381, height = 254, units = "mm")
 
 
